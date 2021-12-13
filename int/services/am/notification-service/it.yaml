@@ -1,0 +1,15 @@
+Environments:
+  IT:
+    s3:
+      - BucketName: s3://it-rins-inbound/am-transaction
+        auth:
+          bucket_policy: mydockerhub-user
+          bucket_arn: $BUCKET_ARN  
+    sqs:
+      - Queuename: sqs://it-rins-inbound-queue/content-master-feeds
+        auth:
+          username: mydockerhub-user
+          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
+    certificates:
+      - OpenSSL 
+      - thirdparty
