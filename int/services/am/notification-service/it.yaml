@@ -12,4 +12,4 @@ Environments:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     certificates:
       - OpenSSL 
-      - ThirdParty
+      - thirdparty
