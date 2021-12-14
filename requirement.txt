@@ -2,4 +2,3 @@
 argparse
 pyyaml
 python-consul
-logging
